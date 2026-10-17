@@ -1,0 +1,94 @@
+/* To-Do specific styles */
+
+.todo {
+  max-width: 480px;
+}
+
+.btn-add {
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-add:hover {
+  background-color: var(--dark);
+  color: #ffffff;
+}
+
+.todo .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(104, 186, 127, 0.3);
+}
+
+.counter {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+/* ---------- Task list ---------- */
+.task-list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffffff;
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+
+.task-list .task-text {
+  flex: 1;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+/* Completed task look */
+.task-list li.done {
+  border-left-color: var(--accent);
+  opacity: 0.7;
+}
+
+.task-list li.done .task-text {
+  text-decoration: line-through;
+}
+
+.task-list input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.btn-delete {
+  border: none;
+  background: none;
+  color: #c0564a;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  color: #8f362c;
+}
+
+.btn-clear {
+  background-color: var(--accent);
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.btn-clear:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
